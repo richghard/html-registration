@@ -1,0 +1,72 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:linear-gradient(135deg,#1565c0,#ffffff);
+overflow:hidden;
+}
+
+.bg-circle{
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,0.3);
+animation:float 6s infinite ease-in-out;
+}
+
+.c1{width:120px;height:120px;top:10%;left:10%;}
+.c2{width:170px;height:170px;bottom:10%;right:10%;}
+
+@keyframes float{
+50%{transform:translateY(-30px);}
+}
+
+.form-box{
+width:380px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+h2{
+text-align:center;
+color:#1565c0;
+margin-bottom:20px;
+}
+
+.field{
+position:relative;
+margin-bottom:15px;
+}
+
+.field i{
+position:absolute;
+left:12px;
+top:50%;
+transform:translateY(-50%);
+color:#1565c0;
+}
+
+.field input,.field select{
+width:100%;
+padding:12px 12px 12px 38px;
+border:2px solid #1565c0;
+border-radius:10px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#1565c0;
+color:white;
+border:none;
+border-radius:10px;
+}
